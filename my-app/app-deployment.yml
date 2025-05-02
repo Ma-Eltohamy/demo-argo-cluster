@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kaivy-deployment
+  name: nginx-deployment
   namespace: prod
   labels:
-    app: kaivy
+    app: nginx
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: kaivy
+      app: nginx
   template:
     metadata:
       labels:
-        app: kaivy
+        app: nginx
     spec:
       containers:
-      - name: kaivy
+      - name: nginx-cont
         image: nginx
