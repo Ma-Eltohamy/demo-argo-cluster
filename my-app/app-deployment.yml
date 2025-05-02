@@ -18,4 +18,4 @@ spec:
     spec:
       containers:
       - name: kaivy
-        image: maeltohamy/kaivy:latest
+        image: nginx
